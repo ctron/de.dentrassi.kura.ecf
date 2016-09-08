@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="kura.ecf.feature"
+      label="Eclipse Kura ECF Feature"
+      version="1.0.0.qualifier"
+      provider-name="Jens Reimann">
+
+   <plugin
+         id="org.eclipse.ecf.mgmt"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
+    <plugin
+         id="org.eclipse.ecf.mgmt.framework"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
+    <plugin
+         id="org.eclipse.ecf.mgmt.framework.host"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
+</feature>

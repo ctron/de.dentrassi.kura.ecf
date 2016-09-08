@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>de.dentrassi</groupId>
+	<artifactId>kura.ecf.feature</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>eclipse-feature</packaging>
+
+	<repositories>
+		<repository>
+			<id>ecf.test</id>
+			<url>https://github.com/ECF/OSGIRemoteManagement/raw/master/releng/org.eclipse.ecf.mgmt.host.feature/build/20160906</url>
+			<layout>p2</layout>
+		</repository>
+		<repository>
+			<id>eclipse.neon</id>
+			<url>http://download.eclipse.org/releases/neon</url>
+			<layout>p2</layout>
+		</repository>
+		<!-- 
+        <repository>
+            <id>eclipse.kura</id>
+            <url>http://packagedrone.eclipse.org/p2/eclipse-kura-2.1</url>
+            <layout>p2</layout>
+        </repository>
+         -->
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>0.26.0</version>
+				<extensions>true</extensions>
+			</plugin>
+			<plugin>
+				<groupId>de.dentrassi.maven</groupId>
+				<artifactId>osgi-dp</artifactId>
+				<version>0.2.1</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>build</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
